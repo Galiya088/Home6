@@ -4,3 +4,17 @@
 // задаются пользователем.
 
 // b1 = 2, k1 = 5, b2 = 4, k2 = 9 -> (-0,5; -0,5)
+
+Console.WriteLine("введите значение b1");
+double b1 = Convert.ToDouble(Console.ReadLine());
+Console.WriteLine("введите число k1");
+double k1 = Convert.ToDouble(Console.ReadLine());
+Console.WriteLine("введите значение b2");
+double b2 = Convert.ToDouble(Console.ReadLine());
+Console.WriteLine("введите число k2");
+double k2 = Convert.ToDouble(Console.ReadLine());
+
+double x = (b2 - b1)/(k1 - k2);
+double y = k2 * x + b2;
+
+Console.WriteLine($"Прямые пересекутся в точке с координатами : ({x}, {y})");
